@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { Link } from "react-router-dom";
 const ProductDisplay = ({ item }) => {
   const { name, id, price, seller, ratingsCount, quantity, img } = item;

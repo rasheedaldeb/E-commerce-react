@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import PageHeader from "../components/PageHeader";
 import PopularPost from "./PopularPost";
+import Data from "../products.json";
 import Tags from "./Tags";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -12,14 +13,14 @@ import { Autoplay } from "swiper/modules";
 import ProductDisplay from "./ProductDisplay";
 import Review from "./Review";
 const SingleProduct = () => {
-  const [product, setproduct] = useState([]);
+  const [product, setproduct] = useState(Data);
   const { id } = useParams();
   //   console.log(id);
-  useEffect(() => {
-    fetch("/src/products.json")
-      .then((res) => res.json())
-      .then((data) => setproduct(data));
-  }, []);
+  // useEffect(() => {
+  //   fetch("/src/products.json")
+  //     .then((res) => res.json())
+  //     .then((data) => setproduct(data));
+  // }, []);
 
   const result = product.filter((p) => p.id === id);
   console.log(result);

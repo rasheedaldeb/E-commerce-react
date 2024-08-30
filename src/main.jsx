@@ -17,7 +17,7 @@ import AuthProvider from "./Context/AuthProvider.jsx";
 createRoot(document.getElementById("root")).render(
   <StrictMode>
     <AuthProvider>
-      <BrowserRouter basename="/E-commerce-react">
+      <BrowserRouter>
         <App />
       </BrowserRouter>
     </AuthProvider>
