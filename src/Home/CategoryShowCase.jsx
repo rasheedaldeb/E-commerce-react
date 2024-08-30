@@ -135,7 +135,7 @@ const CategoryShowCase = () => {
                       </div>
                       {/* content */}
                       <div className="course-content">
-                        <Link to={`/shop/${product.id}`}>
+                        <Link>
                           <h5>{product.title}</h5>
                         </Link>
                         <div className="course-footer">

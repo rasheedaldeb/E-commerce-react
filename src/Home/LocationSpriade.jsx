@@ -4,37 +4,37 @@ const desc =
   "Buy products on your any device with our app & enjoy your time what you want. Just download & install & start to shopping";
 const clientsList = [
   {
-    imgUrl: "/src/assets/images/clients/avater.jpg",
+    imgUrl: "/images/clients/avater.jpg",
     imgAlt: "education thumb rajibraj91 rajibraj",
     text: "Join with Us",
   },
   {
-    imgUrl: "/src/assets/images/clients/avater.jpg",
+    imgUrl: "/images/clients/avater.jpg",
     imgAlt: "education thumb rajibraj91 rajibraj",
     text: "Join with Us",
   },
   {
-    imgUrl: "/src/assets/images/clients/avater.jpg",
+    imgUrl: "/clients/avater.jpg",
     imgAlt: "education thumb rajibraj91 rajibraj",
     text: "Join with Us",
   },
   {
-    imgUrl: "/src/assets/images/clients/avater.jpg",
+    imgUrl: "/clients/avater.jpg",
     imgAlt: "education thumb rajibraj91 rajibraj",
     text: "Join with Us",
   },
   {
-    imgUrl: "/src/assets/images/clients/avater.jpg",
+    imgUrl: "/clients/avater.jpg",
     imgAlt: "education thumb rajibraj91 rajibraj",
     text: "Join with Us",
   },
   {
-    imgUrl: "/src/assets/images/clients/avater.jpg",
+    imgUrl: "/clients/avater.jpg",
     imgAlt: "education thumb rajibraj91 rajibraj",
     text: "Join with Us",
   },
   {
-    imgUrl: "/src/assets/images/clients/avater.jpg",
+    imgUrl: "/clients/avater.jpg",
     imgAlt: "education thumb rajibraj91 rajibraj",
     text: "Join with Us",
   },
@@ -61,7 +61,7 @@ const LocationSpriade = () => {
             {clientsList.map((val, i) => {
               return (
                 <div key={i} className="client-list">
-                  <Link to="/signup" className="client-content">
+                  <Link to="/sign-up" className="client-content">
                     <span>{val.text}</span>
                   </Link>
                   <div className="client-thumb">
